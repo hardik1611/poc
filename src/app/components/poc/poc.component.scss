@@ -1,0 +1,19 @@
+.poc-card {
+  padding: 20px;
+  .card-container {
+    //box-shadow: unset;
+    border: 1px solid #ddd;
+    height: 100%;
+  }
+}
+
+.btn {
+  margin: 30px;
+}
+
+.formatted-text {
+  position: relative;
+  height: 100%;
+  display: block;
+  overflow-y: auto;
+}
