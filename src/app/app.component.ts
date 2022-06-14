@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poc';
+  showOutlet = false;
+
+  onActivate(event : any) {
+    this.showOutlet = true;
+  }
+
+  onDeactivate(event : any) {
+    this.showOutlet = false;
+  }
 }
