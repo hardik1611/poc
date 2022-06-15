@@ -1,8 +1,8 @@
 <div fxLayout="row" style="height: 100%">
   <div fxLayout="row" fxFlex="100">
     <div fxFlex="35" class="poc-card">
-      <mat-card class="card-container card-input">
-        <div fxLayout="column" fxLayoutGap="20px">
+      <mat-card fxLayout="column" class="card-container card-input">
+        <div fxLayout="column" fxLayoutGap="20px" class="p-15 p-b-25">
           <div fxFlex="50">
             <mat-form-field>
               <mat-label>Select Poc</mat-label>
@@ -30,129 +30,128 @@
               </mat-select>
             </mat-form-field>
           </div>
-          <hr>
-          <div fxFlex="50">
-           <ng-container *ngIf="selectedPOC == 1">
-             <div fxLayout="column" fxLayoutGap="10px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 1</mat-label>
-                 <input matInput placeholder="Input 1" [(ngModel)]="pocInputs.input1">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 2</mat-label>
-                 <input matInput placeholder="Input 2" [(ngModel)]="pocInputs.input2">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 2">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 3</mat-label>
-                 <input matInput placeholder="Input 3" [(ngModel)]="pocInputs.input3">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 4</mat-label>
-                 <input matInput placeholder="Input 4" [(ngModel)]="pocInputs.input4">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 3">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 5</mat-label>
-                 <input matInput placeholder="Input 5" [(ngModel)]="pocInputs.input5">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 6</mat-label>
-                 <input matInput placeholder="Input 6" [(ngModel)]="pocInputs.input6">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 4">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 7</mat-label>
-                 <input matInput placeholder="Input 7" [(ngModel)]="pocInputs.input7">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 8</mat-label>
-                 <input matInput placeholder="Input 8" [(ngModel)]="pocInputs.input8">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 5">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 9</mat-label>
-                 <input matInput placeholder="Input 9" [(ngModel)]="pocInputs.input9">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 10</mat-label>
-                 <input matInput placeholder="Input 10" [(ngModel)]="pocInputs.input10">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 6">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 11</mat-label>
-                 <input matInput placeholder="Input 11" [(ngModel)]="pocInputs.input11">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 12</mat-label>
-                 <input matInput placeholder="Input 12" [(ngModel)]="pocInputs.input12">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 7">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 13</mat-label>
-                 <input matInput placeholder="Input 13" [(ngModel)]="pocInputs.input13">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 14</mat-label>
-                 <input matInput placeholder="Input 14" [(ngModel)]="pocInputs.input14">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 8">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 15</mat-label>
-                 <input matInput placeholder="Input 15" [(ngModel)]="pocInputs.input15">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 16</mat-label>
-                 <input matInput placeholder="Input 16" [(ngModel)]="pocInputs.input16">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 9">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 17</mat-label>
-                 <input matInput placeholder="Input 17" [(ngModel)]="pocInputs.input17">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 18</mat-label>
-                 <input matInput placeholder="Input 18" [(ngModel)]="pocInputs.input18">
-               </mat-form-field>
-             </div>
-           </ng-container>
-           <ng-container *ngIf="selectedPOC == 10">
-             <div fxLayout="column" fxLayoutGap="20px">
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 19</mat-label>
-                 <input matInput placeholder="Input 19" [(ngModel)]="pocInputs.input19">
-               </mat-form-field>
-               <mat-form-field fxFlex="50">
-                 <mat-label>Input 20</mat-label>
-                 <input matInput placeholder="Input 20" [(ngModel)]="pocInputs.input20">
-               </mat-form-field>
-             </div>
-           </ng-container>
-          </div>
+        </div>
+        <div fxFlex="50" class="border-top p-15">
+          <ng-container *ngIf="selectedPOC == 1">
+            <div fxLayout="column" fxLayoutGap="10px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 1</mat-label>
+                <input matInput placeholder="Input 1" [(ngModel)]="pocInputs.input1">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 2</mat-label>
+                <input matInput placeholder="Input 2" [(ngModel)]="pocInputs.input2">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 2">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 3</mat-label>
+                <input matInput placeholder="Input 3" [(ngModel)]="pocInputs.input3">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 4</mat-label>
+                <input matInput placeholder="Input 4" [(ngModel)]="pocInputs.input4">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 3">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 5</mat-label>
+                <input matInput placeholder="Input 5" [(ngModel)]="pocInputs.input5">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 6</mat-label>
+                <input matInput placeholder="Input 6" [(ngModel)]="pocInputs.input6">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 4">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 7</mat-label>
+                <input matInput placeholder="Input 7" [(ngModel)]="pocInputs.input7">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 8</mat-label>
+                <input matInput placeholder="Input 8" [(ngModel)]="pocInputs.input8">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 5">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 9</mat-label>
+                <input matInput placeholder="Input 9" [(ngModel)]="pocInputs.input9">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 10</mat-label>
+                <input matInput placeholder="Input 10" [(ngModel)]="pocInputs.input10">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 6">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 11</mat-label>
+                <input matInput placeholder="Input 11" [(ngModel)]="pocInputs.input11">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 12</mat-label>
+                <input matInput placeholder="Input 12" [(ngModel)]="pocInputs.input12">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 7">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 13</mat-label>
+                <input matInput placeholder="Input 13" [(ngModel)]="pocInputs.input13">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 14</mat-label>
+                <input matInput placeholder="Input 14" [(ngModel)]="pocInputs.input14">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 8">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 15</mat-label>
+                <input matInput placeholder="Input 15" [(ngModel)]="pocInputs.input15">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 16</mat-label>
+                <input matInput placeholder="Input 16" [(ngModel)]="pocInputs.input16">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 9">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 17</mat-label>
+                <input matInput placeholder="Input 17" [(ngModel)]="pocInputs.input17">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 18</mat-label>
+                <input matInput placeholder="Input 18" [(ngModel)]="pocInputs.input18">
+              </mat-form-field>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="selectedPOC == 10">
+            <div fxLayout="column" fxLayoutGap="20px">
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 19</mat-label>
+                <input matInput placeholder="Input 19" [(ngModel)]="pocInputs.input19">
+              </mat-form-field>
+              <mat-form-field fxFlex="50">
+                <mat-label>Input 20</mat-label>
+                <input matInput placeholder="Input 20" [(ngModel)]="pocInputs.input20">
+              </mat-form-field>
+            </div>
+          </ng-container>
         </div>
       </mat-card>
     </div>
@@ -161,7 +160,7 @@
     </div>
     <div fxFlex="65" class="poc-card">
       <span class="copy" [matTooltip]="'Copy'" (click)="copy(selectedText)">
-        <mat-icon >file_copy</mat-icon>
+            <button mat-stroked-button color="primary">Copy</button>
       </span>
       <mat-card class="card-container code-area">
         <pre class="formatted-text">{{selectedText | json}}</pre>

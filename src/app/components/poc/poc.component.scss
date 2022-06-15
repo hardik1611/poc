@@ -3,9 +3,9 @@
   .card-container {
     border: 1px solid #ddd;
     height: 100%;
+    padding: 0;
   }
   .code-area {
-    padding: 0;
     background: #ecfaff;
   }
   .card-input {
@@ -25,10 +25,8 @@ mat-form-field {
   width: 100%;
 }
 
-hr {
-  border: 1px solid #d8d8d8;
-  width: 100%;
-  margin: 20px 0;
+.border-top {
+  border-top: 1px solid #d8d8d8;
 }
 
 .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
@@ -42,3 +40,9 @@ hr {
   cursor: pointer;
 }
 
+.p-15 {
+  padding: 15px;
+}
+.p-b-25 {
+  padding-bottom: 25px;
+}
