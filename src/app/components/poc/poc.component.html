@@ -2,7 +2,7 @@
   <div fxLayout="row" fxFlex="100">
     <div fxFlex="35" class="poc-card">
       <mat-card class="card-container card-input">
-        <div fxLayout="column">
+        <div fxLayout="column" fxLayoutGap="20px">
           <div fxFlex="50">
             <mat-form-field>
               <mat-label>Select Poc</mat-label>
@@ -33,7 +33,7 @@
           <hr>
           <div fxFlex="50">
            <ng-container *ngIf="selectedPOC == 1">
-             <div fxLayout="column" fxLayoutGap="20px">
+             <div fxLayout="column" fxLayoutGap="10px">
                <mat-form-field fxFlex="50">
                  <mat-label>Input 1</mat-label>
                  <input matInput placeholder="Input 1" [(ngModel)]="pocInputs.input1">
