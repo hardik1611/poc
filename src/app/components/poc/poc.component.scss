@@ -1,14 +1,16 @@
 .poc-card {
   padding: 20px;
   .card-container {
-    //box-shadow: unset;
     border: 1px solid #ddd;
     height: 100%;
   }
-}
-
-.btn {
-  margin: 30px;
+  .code-area {
+    padding: 0;
+    background: #c9f1ff;
+  }
+  .card-input {
+    height: 95%;
+  }
 }
 
 .formatted-text {
@@ -16,4 +18,27 @@
   height: 100%;
   display: block;
   overflow-y: auto;
+  overflow-x: auto;
 }
+
+mat-form-field {
+  width: 100%;
+}
+
+hr {
+  border: 1px solid #d8d8d8;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color: green;
+}
+.copy {
+  position: absolute;
+  right: 50px;
+  top: 28px;
+  z-index: 1;
+  cursor: pointer;
+}
+

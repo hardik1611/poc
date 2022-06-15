@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poc.component.scss']
 })
 export class PocComponent implements OnInit {
-  selectedPOC = null;
+  selectedPOC = 1;
+  selectedOption = 'A';
   pocInputs = {
     input1: '',
     input2: '',
@@ -35,11 +36,30 @@ export class PocComponent implements OnInit {
     { "id": 3, "number": "K3483483346", "state": "CA", "active": true },
     { "id": 4, "number": "K3483483347", "state": "CA", "active": true },
     { "id": 5, "number": "K3483483348", "state": "CA", "active": true },
+    { "id": 6, "number": "K3483483348", "state": "CA", "active": true },
+    { "id": 7, "number": "K3483483348", "state": "CA", "active": true },
+    { "id": 8, "number": "K3483483348", "state": "CA", "active": true },
+    { "id": 9, "number": "K3483483348", "state": "CA", "active": true },
+    { "id": 10, "number": "K3483483348", "state": "CA", "active": true },
   ];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  copy(val: any): void {
+    const selBox = document.createElement('textarea');
+    selBox.style.position = 'fixed';
+    selBox.style.left = '0';
+    selBox.style.top = '0';
+    selBox.style.opacity = '0';
+    selBox.value = JSON.stringify(val);
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
   }
 
 }

@@ -1,26 +1,37 @@
 <div fxLayout="row" style="height: 100%">
-  <div fxLayout="column" fxFlex="100" fxLayoutGap="20px">
-    <div fxFlex="40" class="poc-card">
-      <mat-card class="card-container">
-        <div fxLayout="row">
+  <div fxLayout="row" fxFlex="100">
+    <div fxFlex="35" class="poc-card">
+      <mat-card class="card-container card-input">
+        <div fxLayout="column">
           <div fxFlex="50">
             <mat-form-field>
               <mat-label>Select Poc</mat-label>
               <mat-select [(ngModel)]="selectedPOC">
-                <mat-option value="1">1</mat-option>
-                <mat-option value="2">2</mat-option>
-                <mat-option value="3">3</mat-option>
-                <mat-option value="4">4</mat-option>
-                <mat-option value="5">5</mat-option>
-                <mat-option value="6">6</mat-option>
-                <mat-option value="7">7</mat-option>
-                <mat-option value="8">8</mat-option>
-                <mat-option value="9">9</mat-option>
-                <mat-option value="10">10</mat-option>
+                <mat-option [value]="1">1</mat-option>
+                <mat-option [value]="2">2</mat-option>
+                <mat-option [value]="3">3</mat-option>
+                <mat-option [value]="4">4</mat-option>
+                <mat-option [value]="5">5</mat-option>
+                <mat-option [value]="6">6</mat-option>
+                <mat-option [value]="7">7</mat-option>
+                <mat-option [value]="8">8</mat-option>
+                <mat-option [value]="9">9</mat-option>
+                <mat-option [value]="10">10</mat-option>
               </mat-select>
             </mat-form-field>
           </div>
-          <div fxFlex="30">
+          <div fxFlex="50">
+            <mat-form-field>
+              <mat-label>Select Option</mat-label>
+              <mat-select [(ngModel)]="selectedOption">
+                <mat-option [value]="'A'">A</mat-option>
+                <mat-option [value]="'B'">B</mat-option>
+                <mat-option [value]="'C'">C</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <hr>
+          <div fxFlex="50">
            <ng-container *ngIf="selectedPOC == 1">
              <div fxLayout="column" fxLayoutGap="20px">
                <mat-form-field fxFlex="50">
@@ -145,11 +156,14 @@
         </div>
       </mat-card>
     </div>
-    <div fxLayout="row" fxLayoutAlign="center center" class="btn">
+    <div fxLayout="row" fxLayoutAlign="center center">
       <button mat-raised-button color="primary">Submit</button>
     </div>
-    <div fxFlex="40" class="poc-card">
-      <mat-card class="card-container">
+    <div fxFlex="65" class="poc-card">
+      <span class="copy" [matTooltip]="'Copy'" (click)="copy(selectedText)">
+        <mat-icon >file_copy</mat-icon>
+      </span>
+      <mat-card class="card-container code-area">
         <pre class="formatted-text">{{selectedText | json}}</pre>
       </mat-card>
     </div>
