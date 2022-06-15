@@ -6,8 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poc.component.scss']
 })
 export class PocComponent implements OnInit {
-  selectedPOC = 1;
-  selectedOption = 'A';
+  selectedAPI = 'Office';
+  apiList = ['Office', 'Associate', 'Client Transactions', 'Client Interactions'];
+  selectedOption = 'Office by ID';
+  officeOptions = [
+    'Office by ID',
+    'Office by Phone',
+    'Number',
+    'Offices by zipcode',
+    'Office by ID',
+    'Offices by Address',
+    'Offices Heirarchy',
+  ];
+
+  associateOptions = [
+    'Associate Info',
+    'Asscoaite Details',
+    'Tax Prep Associate Info'
+  ];
+
+  clientTransactionsOptions = [
+    'UCID lookup',
+    'GUAID look up',
+  ];
+
+  clientInteractionsOptions = [
+    'UCID look up ',
+  ];
+
+  optionList = this.officeOptions;
+
   pocInputs = {
     input1: '',
     input2: '',
@@ -60,6 +88,29 @@ export class PocComponent implements OnInit {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
+  }
+
+  selectionChange(event: any): void {
+    switch (event.value) {
+      case 'Office':
+        this.optionList = this.officeOptions;
+        break;
+      case 'Associate':
+        this.optionList = this.associateOptions;
+        break;
+      case 'Client Transactions':
+        this.optionList = this.clientTransactionsOptions;
+        break;
+      case 'Client Interactions':
+        this.optionList = this.clientInteractionsOptions;
+        break;
+      default:
+        this.optionList = [];
+    }
+
+    if (this.optionList && this.optionList.length) {
+      this.selectedOption = this.optionList[0];
+    }
   }
 
 }
